@@ -3,74 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LUCAS L. SUÁREZ</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
-
-      html {
-        font-family: "IBM Plex Mono", monospace;
-      }
-
-      body {
-        padding: 0 0.5rem 1rem;
-        max-width: calc(min(80ch, round(down, 100%, 1ch)));
-        margin: 0 auto;
-        box-sizing: border-box;
-      }
-
-      a {
-        word-break: break-all;
-      }
-
-      h1,
-      h2 {
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-
-      h2 {
-        font-size: 1.2rem;
-        margin: 2.3rem 0 1.2rem;
-      }
-
-      .content {
-        padding: 0 1rem;
-      }
-
-      ul {
-        padding: 0 1.2rem;
-      }
-
-      p,
-      li {
-        font-size: 1rem;
-        line-height: 1.2;
-        word-break: break-word;
-        word-wrap: break-word;
-        hyphens: auto;
-      }
-
-      li {
-        margin-bottom: 0.3rem;
-      }
-
-      hr {
-        border: none;
-        height: 0.1rem;
-        background-color: transparent;
-        width: 100%;
-        margin: 30px auto;
-        border-top: 3px solid black;
-        border-bottom: 3px solid black;
-      }
-
-      .word-wrap {
-        word-break: break-all;
-      }
-    </style>
+    <title>Lucas L. Suárez</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>LUCAS L. SUÁREZ</h1>
+    <header class="header-area">
+      <!-- site-navbar start -->
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+            <!-- site logo -->
+            <a href="#home" class="site-logo">LUCAS L. SUÁREZ</a>
+    
+            <!-- site menu/nav -->
+            <ul>
+              <li><a href="#perfil">Perfil</a></li>
+              <li><a href="#experiencia">Experiencia</a></li>
+              <li><a href="#educacion">Educación</a></li>
+              <li><a href="#proyectos">Proyectos</a></li>
+              <li><a href="#contactos">Contactos</a></li>
+            </ul>
+    
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+            </nav>
+              <span></span>
+            </button>
+        </div>
+      </div><!-- navbar-area end -->
+    </header> 
+    
+  <main>
+    <h2 id="perfil">PERFIL</h2>
 
     <p>
       Desarrollador de software especializado en aplicaciones web, con
@@ -80,7 +44,7 @@
       (UNPSJB), donde he adquirido una sólida base en el desarrollo de software.
     </p>
 
-    <hr />
+    <hr id="experiencia" />
 
     <h2>EXPERIENCIA</h2>
 
@@ -97,8 +61,8 @@
           Fiverr y Freelancer. Me especializo en desarrollo web y mobile.
           Trabajo con tecnologías modernas como Java, TypeScript, Php, Sprint
           Boot, Angular, Kotlin, Android Studio.
+        </li>
         </p>
-      </li>
       <li>
         <p>
           <strong>Desarrollador Full Stack</strong>
@@ -127,7 +91,7 @@
       </li>
     </ul>
 
-    <hr />
+    <hr id="educación"/>
 
     <h2>EDUCACIÓN</h2>
 
@@ -159,7 +123,15 @@
         </p>
       </li>
     </ul>
+    <hr id="proyectos"/>
 
-    <hr />
+    <h2>Proyectos</h2>
+
+    <hr id="Contactos">
+
+    <h2>Contactos</h2>
+    
+  </main>
+  <script src="script.js"></script>    
   </body>
 </html>

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+
+html {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+  margin: auto;
+}
+
+main {
+  padding: 0 0.5rem 1rem;
+  max-width: calc(min(80ch, round(down, 100%, 1ch)));
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+a {
+  word-break: break-all;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2.3rem 0 1.2rem;
+}
+
+.content {
+  padding: 0 1rem;
+}
+
+ul {
+  padding: 0 1.2rem;
+}
+
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.2;
+  word-break: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+hr {
+  border: none;
+  height: 0.1rem;
+  background-color: transparent;
+  width: 100%;
+  margin: 30px auto;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.word-wrap {
+  word-break: break-all;
+}
+
+/* navbar regular css start */
+.navbar-area {
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid #000;
+}
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.site-logo {
+  margin-left: 1%;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+}
+.site-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.site-navbar ul li a {
+  color: #000;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.site-navbar ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+/* navbar regular css end */
+
+/* nav-toggler css start */
+.nav-toggler {
+  border: 3px solid #000;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+  margin-right: 1%;
+}
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  transition: 0.3s;
+}
+.nav-toggler span:before {
+  content: "";
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  content: "";
+  transform: translateY(6px);
+}
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+/* nav-toggler css start */
+
+/* mobile breakpoint start */
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+  /* navbar css for mobile start */
+  .nav-toggler {
+    display: block;
+  }
+  .site-navbar {
+    min-height: 60px;
+  }
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #444;
+    background-color: rgba(0, 0, 0, 0.75);
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .site-navbar ul li a {
+    padding: 25px;
+  }
+  .site-navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
+  .intro-area h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  /* navbar css for mobile end */
+}
+/* mobile breakpoint end */
