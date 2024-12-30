@@ -187,3 +187,20 @@ a.site-logo {
   /* navbar css for mobile end */
 }
 /* mobile breakpoint end */
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
