@@ -204,3 +204,7 @@ a.site-logo {
   text-decoration: none;
   margin: 0 10px;
 }
+
+#footerp {
+  margin-bottom: 0;
+}
