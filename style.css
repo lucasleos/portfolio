@@ -6,6 +6,7 @@ html {
 
 body {
   margin: auto;
+  background-color: #eee;
 }
 
 main {
@@ -67,8 +68,8 @@ hr {
 
 /* navbar regular css start */
 .navbar-area {
-  background: rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid #000;
+  background-color: #ddd;
 }
 .site-navbar {
   display: flex;
